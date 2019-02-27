@@ -139,7 +139,7 @@ class Film:
   def load(self, db):
     film_dict = {"title": self.title, "url": self.url, "imdb_id": self.id, "grossUSA": self.grossUSA, "grossWW": self.grossWW, "actors": self.actors}
 
-    film_coll = db.films
+    film_coll = db.acteur1
     film_coll.insert_one(film_dict)
     
   def visu(self):
